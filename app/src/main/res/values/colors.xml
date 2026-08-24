@@ -1,0 +1,10 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FF1565C0</color>
+    <color name="primary_dark">#FF0D47A1</color>
+    <color name="accent_red">#FFD32F2F</color>
+    <color name="accent_green">#FF2E7D32</color>
+    <color name="status_bg">#AA000000</color>
+    <color name="surface_dark">#FF121212</color>
+</resources>

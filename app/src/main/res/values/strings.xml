@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RTMP Streamer</string>
+    <string name="hint_rtmp_url">rtmp://server-address/live/stream-key</string>
+    <string name="btn_start">Mulai Streaming</string>
+    <string name="btn_stop">Stop Streaming</string>
+    <string name="status_idle">Status: Siap</string>
+    <string name="status_streaming">Status: Sedang Live</string>
+    <string name="status_connecting">Status: Menghubungkan...</string>
+    <string name="status_stopped">Status: Berhenti</string>
+    <string name="permissions_required">Izin kamera dan mikrofon dibutuhkan untuk streaming</string>
+    <string name="url_empty">Masukkan URL RTMP terlebih dahulu</string>
+    <string name="btn_switch_camera">Ganti Kamera</string>
+</resources>
