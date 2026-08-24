@@ -59,5 +59,5 @@ dependencies {
     // RootEncoder - RTMP/RTSP streaming library
     // https://github.com/pedroSG94/RootEncoder
     // Menggunakan MultiCamera1 dari library ini untuk multi-streaming (encode sekali, kirim ke banyak RTMP sekaligus)
-    implementation("com.github.pedroSG94.RootEncoder:library:2.8.0")
+    implementation("com.github.pedroSG94.RootEncoder:library:2.5.2")
 }
