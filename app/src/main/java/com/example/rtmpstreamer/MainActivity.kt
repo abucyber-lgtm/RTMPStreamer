@@ -27,7 +27,7 @@ import com.example.rtmpstreamer.service.StreamingForegroundService
 import com.example.rtmpstreamer.streaming.ProfileConnectChecker
 import com.example.rtmpstreamer.ui.ProfileAdapter
 import com.pedro.common.ConnectChecker
-import com.pedro.encoder.input.gl.render.filters.`object`.TextFilterRender
+import com.pedro.encoder.input.gl.render.filters.`object`.TextObjectFilterRender
 import com.pedro.encoder.utils.gl.TranslateTo
 import com.pedro.library.multiple.MultiCamera1
 import com.pedro.library.multiple.MultiType
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     private var latestBitrateBps = 0L
     private var primaryProfileId: Long? = null
 
-    private var textFilter: TextFilterRender? = null
+    private var textFilter: TextObjectFilterRender? = null
     private var bitrateAdapter: BitrateAdapter? = null
 
     private val monitorHandler = Handler(Looper.getMainLooper())
@@ -442,7 +442,7 @@ class MainActivity : AppCompatActivity() {
             .setView(input)
             .setPositiveButton("Tampilkan") { _, _ ->
                 val text = input.text?.toString()?.trim().orEmpty().ifEmpty { "LIVE" }
-                val filter = TextFilterRender()
+                val filter = TextObjectFilterRender()
                 camera.glInterface.addFilter(filter)
                 filter.setText(text, 32f, Color.WHITE, Color.parseColor("#80000000"))
                 filter.setScale(40f, 15f)
